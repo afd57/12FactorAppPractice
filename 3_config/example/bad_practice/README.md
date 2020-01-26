@@ -2,7 +2,8 @@
 
 It is bad practice because configuration is grouped.
 
-Why is it bad practice?
+### Why is it bad practice?
+
 This method does not scale cleanly: as more deploys of the app are created, new environment names are necessary, such as `staging` or `qa`. As the project grows further, developers may add their own special environments like joes-staging, resulting in a combinatorial explosion of config which makes managing deploys of the app very brittle.
 
 
