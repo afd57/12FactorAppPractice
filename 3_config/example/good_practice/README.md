@@ -39,3 +39,4 @@ In a twelve-factor app, env vars are granular controls, each fully orthogonal to
     headless.service.database
     True
     
+I can change every values without changing any code.

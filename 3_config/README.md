@@ -17,3 +17,14 @@ In a twelve-factor app, env vars are granular controls, each fully orthogonal to
 
 Source: https://12factor.net/config
 
+Please check Good practice and bad practice.
+
+### In bad practice 
+
+You want to use a different database in test config. You have to change code to use this different database.
+
+### Good Practice
+
+You want to use a different database. 
+Only you will set database ip adress to environment varible while run docker container. 
+`docker run -e APP_ENV=“development” -e CONFIG_1=“VALUE_1”`
